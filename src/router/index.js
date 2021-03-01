@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import AddProject from '../views/AddProject.vue'
-import EditProject from '../views/EditProject.vue'
+import Home from '../views/website/Home.vue'
+import AddProject from '../views/project/AddProject.vue'
+import EditProject from '../views/project/EditProject.vue'
+import Project  from '../views/project/Project.vue'
+import Adminpanel  from '../views/project/Adminpanel.vue'
 
 const routes = [
   {
@@ -10,16 +12,30 @@ const routes = [
     component: Home
   },
   {
-    path: '/add',
-    name: 'AddProject',
-    component: AddProject
+    path: '/project',
+    name: 'Adminpanel',
+    component: Adminpanel,
+
+    children:[
+      {
+        path: '',
+        name: 'Project',
+        component: Project
+      },
+      {
+        path: '/add',
+        name: 'AddProject',
+        component: AddProject
+      },
+      {
+        path: '/projects/:id',
+        name: 'EditProject',
+        component: EditProject,
+        props: true
+      },
+    ]
   },
-  {
-    path: '/projects/:id',
-    name: 'EditProject',
-    component: EditProject,
-    props: true
-  },
+ 
 ]
 
 const router = createRouter({

@@ -15,8 +15,8 @@
 //   - e.g. if we click 'completed' only show completed project
 //   - use a computed property to do this
 
-import SingleProject from '../components/SingleProject.vue'
-import FilterNav from '../components/FilterNav.vue'
+import SingleProject from '../../components/SingleProject.vue'
+import FilterNav from '../../components/FilterNav.vue'
 
 export default {
   name: 'Home',

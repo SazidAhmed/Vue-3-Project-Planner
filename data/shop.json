@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jhon Doe",
+      "email": "jhon@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Jenny Doe",
+      "email": "jenney@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "title": "Dress"
+    },
+    {
+      "id": 2,
+      "title": "Shoe"
+    }
+  ],
+  "subCategory": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "title": "Three Pis"
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "title": "Baby Dress"
+    },
+    {
+      "id": 3,
+      "category_id": 2,
+      "title": "Baby Shoe"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "subCategory_id": 1,
+      "title": "Pakistani Lawn",
+      "price": "1800",
+      "stock": "5",
+      "description": "100% Original Pakistani dress"
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "subCategory_id": 3,
+      "title": "Nike",
+      "price": "5000",
+      "stock": "3",
+      "description": "100% nike Shoe"
+    }
+  ]
+}
